@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPMLink", "GPMLink\GPMLink.csproj", "{7BC0AB47-24E1-4740-9A2D-79DDAF23F3FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPMLib", "GPMLib\GPMLib.csproj", "{54C5AB53-9AB1-4FD7-AD21-F52EB225BB62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPMLibUI", "GPMLibUI\GPMLibUI.csproj", "{B877CDAC-D5F5-420A-806A-7404CACCA783}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7BC0AB47-24E1-4740-9A2D-79DDAF23F3FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BC0AB47-24E1-4740-9A2D-79DDAF23F3FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BC0AB47-24E1-4740-9A2D-79DDAF23F3FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BC0AB47-24E1-4740-9A2D-79DDAF23F3FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54C5AB53-9AB1-4FD7-AD21-F52EB225BB62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54C5AB53-9AB1-4FD7-AD21-F52EB225BB62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54C5AB53-9AB1-4FD7-AD21-F52EB225BB62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54C5AB53-9AB1-4FD7-AD21-F52EB225BB62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B877CDAC-D5F5-420A-806A-7404CACCA783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B877CDAC-D5F5-420A-806A-7404CACCA783}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B877CDAC-D5F5-420A-806A-7404CACCA783}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B877CDAC-D5F5-420A-806A-7404CACCA783}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9D94F7D-781E-46CE-BFEB-D9BE752CD260}
+	EndGlobalSection
+EndGlobal

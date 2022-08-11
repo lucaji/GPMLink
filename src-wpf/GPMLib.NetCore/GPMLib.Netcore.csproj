@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Authors>Luca Cipressi</Authors>
+    <Company>lookaji</Company>
+    <Product>GPM8310 DataLogger</Product>
+    <Copyright>(c) 2022 - lucaji.github.io</Copyright>
+    <RootNamespace>Gpm8310</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Runtime" Version="4.3.1" />
+  </ItemGroup>
+
+</Project>

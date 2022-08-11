@@ -1,0 +1,31 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="SimpleWpfStyles\button.xaml" />
+        <ResourceDictionary Source="SimpleWpfStyles\checkbox.xaml" />
+        <ResourceDictionary Source="SimpleWpfStyles\combobox.xaml" />
+        <ResourceDictionary Source="SimpleWpfStyles\documentviewer.xaml" />
+        <ResourceDictionary Source="SimpleWpfStyles\expander.xaml" />
+        <ResourceDictionary Source="SimpleWpfStyles\frame.xaml" />
+        <ResourceDictionary Source="SimpleWpfStyles\groupbox.xaml" />
+        <ResourceDictionary Source="SimpleWpfStyles\label.xaml" />
+        <ResourceDictionary Source="SimpleWpfStyles\listbox.xaml" />
+        <ResourceDictionary Source="SimpleWpfStyles\listview.xaml" />
+        <ResourceDictionary Source="SimpleWpfStyles\menu.xaml" />
+        <ResourceDictionary Source="SimpleWpfStyles\navigationwindow.xaml" />
+        <ResourceDictionary Source="SimpleWpfStyles\progressbar.xaml" />
+        <ResourceDictionary Source="SimpleWpfStyles\radiobutton.xaml" />
+        <ResourceDictionary Source="SimpleWpfStyles\resizegrip.xaml" />
+        <ResourceDictionary Source="SimpleWpfStyles\scrollbar.xaml" />
+        <ResourceDictionary Source="SimpleWpfStyles\scrollviewer.xaml" />
+        <ResourceDictionary Source="SimpleWpfStyles\separator.xaml" />
+        <ResourceDictionary Source="SimpleWpfStyles\statusbar.xaml" />
+        <ResourceDictionary Source="SimpleWpfStyles\tabcontrol.xaml" />
+        <ResourceDictionary Source="SimpleWpfStyles\textbox.xaml" />
+        <ResourceDictionary Source="SimpleWpfStyles\toolbar.xaml" />
+        <ResourceDictionary Source="SimpleWpfStyles\tooltip.xaml" />
+        <ResourceDictionary Source="SimpleWpfStyles\treeview.xaml" />
+        <ResourceDictionary Source="SimpleWpfStyles\window.xaml" />
+
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

@@ -1,0 +1,200 @@
+﻿
+        /* COMMANDS
+         * COMMAND LIST
+         * 
+         * SCPI Commands
+         * 
+         *      *CLS    Clears the standard event status register, extended event status register, and error queue.
+         *              Syntax
+         *              *CLS
+         *
+         *      *ESE    Sets or returns the ESER (Event Status Enable Register) contents.
+         *              Syntax
+         *              *ESE <NR1>
+         *              
+         *              Query Syntax
+         *              *ESE?
+         *              
+         *              Parameter/Return parameter
+         *              <NR1> 0..255
+         *              
+         *              Example
+         *              *ESE 65
+         *              *ESE?
+         *              130
+         *              
+         *      *ESR    Returns and clears the SESR (Standard Event Status Register).
+         *              Query Syntax
+         *              *ESR?
+         *              
+         *              Return Parameter
+         *              <NR1> 0..255
+         *              
+         *              Example
+         *              *ESR?
+         *              198
+         *              
+         *      *IDN
+         *      *OPC
+         *      *OPT
+         *      *RST
+         *      *SRE
+         *      *STB
+         *      *TRG
+         *      
+         * 
+         * AOUTput Commands
+         * 
+         * COMMunicate Commands
+         * 
+         *      :COMMunicate
+         *      :COMMunicate:HEADer
+         *      :COMMunicate:LOCKout
+         *      :COMMunicate:REMote
+         *      :COMMunicate:STATus
+         *      :COMMunicate:VERBose
+         *      
+         * 
+         * DISPlay Commands
+         * 
+         *      :DISPlay    Returns all display settings.
+         *      :DISPlay:NORMal     Returns all normal measurement data display settings.
+         *      :DISPlay[:NORMal]:ITEM<x>       Sets or returns a normal measurement data display item. Refer to page 81 for details.
+         *      :DISPlay:INTegrate:ITEM<x>
+         *      :DISPlay:PAGE
+         *      
+         *      
+         * HARMonics Commands
+         * 
+         * 
+         * HOLD Commands
+         * 
+         *      :HOLD
+         *      
+         * 
+         * INPut Commands
+         * 
+         *      :INPut
+         *      [:INPut]:WIRing
+         *      [:INPut]:MODE
+         *      [:INPut]:VOLTage
+         *      [:INPut]:VOLTage:RANGe
+         *      [:INPut]:VOLTage:AUTO
+         *      [:INPut]:VOLTage:CONFig
+         *      [:INPut]:VOLTage:POJump
+         *      [:INPut]:CURRent
+         *      [:INPut]:CURRent:RANGe
+         *      [:INPut]:CURRent:AUTO
+         *      [:INPut]:CURRent:CONFig
+         *      [:INPut]:CURRent:POJump
+         *      [:INPut]:CURRent:EXTSensor:CONFig<x>
+         *      [:INPut]:CURRent:EXTSensor:POJump<x>
+         *      [:INPut]:CURRentSRATio:ELEMent1<x>
+         *      [:INPut]:RCONfig
+         *      [:INPut]:SCALing
+         *      [:INPut]:SCALing[:STATe]
+         *      [:INPut]:SCALing:{VT|CT|SFACtor}:ELEMent<x>
+         *      [:INPut]:SYNChronize
+         *      [:INPut]:FILTer
+         *      [:INPut]:FILTer:LINE
+         *      [:INPut]:FILTer:FREQuency
+         *      [:INPut]:POVer
+         *      [:INPut]:CRANge
+         *      [:INPut]:ZERO
+         *      
+         *      
+         * INTEGrate Commands
+         * 
+         *      :INTEGrate
+         *      :INTEGrate:MODE
+         *      :INTEGrate:FUNCtion
+         *      :INTEGrate:TIMer
+         *      :INTEGrate:STARt
+         *      :INTEGrate:STOP
+         *      :INTEGrate:RESet
+         *      :INTEGrate:STATe
+         *      
+         *      
+         * MATH Commands
+         * 
+         *      :MATH
+         * 
+         * 
+         * MEASure Commands
+         * 
+         *      :MEASure
+         *      :MEASure:AVERaging
+         *      :MEASure:AVERaging[:STATe]
+         *      :MEASure:AVERaging:TYPE
+         *      :MEASure:AVERaging:COUNt
+         *      :MEASure:MHOLd
+         *      
+         *      
+         * NUMeric Commands
+         * 
+         *      :NUMeric
+         *      :NUMeric:FORMat
+         *      :NUMeric:NORMal
+         *      :NUMeric[:NORMal]:VALue
+         *      :NUMeric[:NORMal]:NUMber
+         *      :NUMeric[:NORMal]:ITEM<x>   Sets or returns the specified numeric data output item function.
+         *      
+         *      :NUMeric[:NORMal]:PRESet
+         *      :NUMeric[:NORMal]:CLEar
+         *      :NUMeric[:NORMal]:DELete
+         *      :NUMeric[:NORMal]:HEADer
+         *      :NUMeric:LIST
+         *      :NUMeric:LIST:VALue
+         *      :NUMeric:LIST:NUMber
+         *      :NUMeric:LIST:ORDer
+         *      :NUMeric:LIST:SELect
+         *      :NUMeric:LIST:ITEM<x>
+         *      :NUMeric:LIST:PRESet
+         *      :NUMeric:LIST:CLEar
+         *      :NUMeric:LIST:DELete
+         *      :NUMeric:HOLD
+         *      
+         *      
+         * RATE Commands
+         * 
+         *      :RATE
+         *      :RATE:AUTO
+         *      :RATE:AUTO:TIMeout
+         *      :RATE:AUTO:SYNChronize
+         *      
+         *      
+         * RECall Commands
+         * 
+         * 
+         * 
+         * STATus Commands
+         * 
+         *      :STATus
+         *      :STATus:CONDition
+         *      :STATus:EESE
+         *      :STATus:EESR
+         *      :STATus:ERRor
+         *      :STATus:FILTer<x>
+         *      :STATus:QENable
+         *      :STATus:QMESsage
+         *      
+         *      
+         * STORe Commands
+         * 
+         * 
+         * SYSTem Commands
+         * 
+         * 
+         *      :SYSTem
+         *      :SYSTem:BRIGhtness
+         *      :SYSTem:COMMunicate:COMMand
+         *      :SYSTem:COMMunicate:ETHernet:MACaddress
+         *      :SYSTem:FIRMware:DATE
+         *      :SYSTem:KLOCk
+         *      :SYSTem:MODel
+         *      :SYSTem:RESolution
+         *      :SYSTem:SERial
+         *      :SYSTem:VERsion[:FIRMware]
+         *      
+         *      
+         */

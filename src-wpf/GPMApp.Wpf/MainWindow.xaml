@@ -1,0 +1,78 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:UIComponents="clr-namespace:GpmUIComponents.WPF;assembly=GpmUIComponents.WPF"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:BauerMeterAppWPF"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:UIComponentsWPF="clr-namespace:UIComponentsWPF;assembly=GpmUIComponents.WPF"
+    x:Class="BauerMeterAppWPF.MainWindow"
+    Title="GPMLink"
+    Background="Black"
+    FontFamily="Bahnschrift Light Condensed"
+    Loaded="Window_Loaded"
+    
+    mc:Ignorable="d">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/GpmUIComponents.WPF;component/GpmUIBrushes.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <DockPanel LastChildFill="True">
+
+        <StatusBar
+            x:Name="sbar"
+            VerticalAlignment="Bottom"
+            Background="Beige"
+            DockPanel.Dock="Bottom">
+
+            <StatusBarItem x:Name="GpmMenuStatusBarItem">
+                <TextBlock Text="GPM:" />
+            </StatusBarItem>
+            <StatusBarItem x:Name="StatusBaGpmStatusBarItem">
+                <TextBlock x:Name="StatusBarGpmTextBlock"><Run Text="n/a"/></TextBlock>
+            </StatusBarItem>
+            <Separator />
+            <StatusBarItem>
+                <TextBlock><Run Text="Voltage Range:"/></TextBlock>
+            </StatusBarItem>
+            <StatusBarItem x:Name="StatusBarVoltageRangeStatusBarItem">
+                <TextBlock x:Name="StatusBarVoltageRangeTextBlock"><Run Text="n/a"/></TextBlock>
+            </StatusBarItem>
+            <StatusBarItem>
+                <Menu x:Name="manu">
+                    <MenuItem Header="cappa">
+                        <MenuItem Header="cippa"/>
+                        <MenuItem Header="lappa"/>
+                    </MenuItem>
+                </Menu>
+            </StatusBarItem>
+            <Separator />
+            <StatusBarItem>
+                <TextBlock><Run Text="Current Range:"/></TextBlock>
+            </StatusBarItem>
+            <StatusBarItem x:Name="StatusBarCurrentRangeStatusBarItem">
+                <TextBlock x:Name="StatusBarCurrentRangeTextBlock"><Run Text="n/a"/></TextBlock>
+            </StatusBarItem>
+            <StatusBarItem HorizontalAlignment="Right"/>
+        </StatusBar>
+        <StackPanel Orientation="Vertical" Background="#FF212121" DockPanel.Dock="Left"
+                    Width="300" Height="Auto">
+
+            <UIComponents:GpmInputModeControl
+                x:Name="InputModeControl" />
+            <UIComponents:GpmIntegratorControl
+                x:Name="IntegratorControl" />
+            <UIComponents:GpmLiveMeter
+                x:Name="LiveReadingsControl"/>
+        </StackPanel>
+        <GPMLib.UI:GpmDataPlotControl 
+            x:Name="PlotControl"
+            Height="Auto"
+            VerticalAlignment="Stretch"
+            VerticalContentAlignment="Stretch"/>
+    </DockPanel>
+
+</Window>

@@ -1,0 +1,45 @@
+﻿<Window x:Class="GPMLib.UI.Wpf.GpmDevicePropertiesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GPMLib.UI.Wpf"
+        mc:Ignorable="d"
+        Title="DevicePropertiesWindow" 
+        Background="#FF202020"
+        FontFamily="Bahnschrift Light Condensed"
+        FontSize="24"
+        Height="221" 
+        Width="437">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="GpmUIBrushes.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid Margin="0,0,0,0">
+        <Label
+            Width="438"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Background="{StaticResource gpmButtonGradientFill}"
+            Content="DEVICE PROPERTIES"
+            FontFamily="Bahnschrift"
+            Foreground="White" />
+        <TextBox x:Name="IPAddressTextBox" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="140,0,0,0" Text="127.0.0.1" FontSize="24" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" FontFamily="Bahnschrift SemiLight" Background="#FF5B5B5B" Foreground="White"/>
+        <TextBox x:Name="NameTextbox" HorizontalAlignment="Left"  HorizontalContentAlignment="Center" Margin="277,0,0,0" Text="Local" FontSize="24" TextWrapping="Wrap" VerticalAlignment="Center" Width="132" FontFamily="Bahnschrift SemiLight" Background="#FF5B5B5B" Foreground="White"/>
+        <Button x:Name="OKButton" Content="OK" HorizontalAlignment="Left" Margin="325,155,0,0" VerticalAlignment="Top" Width="84" Height="30" RenderTransformOrigin="0.451,1.388" IsDefault="True" FontSize="18" FontFamily="Bahnschrift Condensed"/>
+        <Label Content="IP ADDRESS" HorizontalAlignment="Left" 
+               HorizontalContentAlignment="Center"
+               Margin="141,50,0,0" VerticalAlignment="Top" Foreground="White" Width="119" FontSize="18" FontFamily="Bahnschrift Light" Background="Black"/>
+        <Label Content="NAME" HorizontalAlignment="Left"
+               HorizontalContentAlignment="Center"
+               Margin="277,50,0,0" VerticalAlignment="Top" Foreground="White" Width="132" FontSize="18" FontFamily="Bahnschrift Light" Background="Black"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="10,46,0,0" VerticalAlignment="Top" Width="100" Source="/GpmUIComponents.WPF;component/Resources/gpm-8310-128.png"/>
+        <Button x:Name="CancelButton" Content="CANCEL" HorizontalAlignment="Left" Margin="223,155,0,0" VerticalAlignment="Top" Width="84" Height="30" RenderTransformOrigin="0.451,1.388" IsCancel="True" FontSize="18" FontFamily="Bahnschrift Condensed"/>
+        <CheckBox x:Name="SetAsDefaultButton" VerticalContentAlignment="Center" Content="SET AS DEFAULT" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top" Foreground="White" Background="White" FontSize="18"/>
+        <Label x:Name="ErrorMessageLabel" Content="Error label." HorizontalAlignment="Left" Margin="140,123,0,0" VerticalAlignment="Top" Width="269" Height="27" FontSize="10" Foreground="Red"/>
+
+    </Grid>
+</Window>
